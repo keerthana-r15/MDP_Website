@@ -1,0 +1,238 @@
+body{
+    background-color: #1E2128;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.pic{
+    width:100%;
+    height: 120vh;
+    background:url(thiss.jpg);
+    border-bottom: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path:circle(200vh at 50% -90vh)
+}
+.topnav{
+    width:100%;
+    height:50px;
+    position: fixed;
+    background-color: rgb(255, 235, 218);
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 100%;
+  }
+  
+.topnav a:hover {
+    background-color:#4D3032;
+    color:white;
+    border-radius: 3em;
+  }
+  
+.topnav a.active {
+    background-color: #4D3032;
+    color: white;
+    border-radius: 3em;
+
+  }
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border-radius: 2em;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    opacity: 100%;
+  }
+.topnav input[type=text] {
+      border: 1px solid #fff;
+      opacity: 100%;
+    }
+h1{
+    text-align: center;
+    margin-top: 400px;
+    font-size: 50px;
+    font-family: 'Merriweather';
+    color:#fff;
+}
+h2{
+    text-align: center;
+    font-size: 20px;
+    font-family:'Merriweather';
+    color: #fff;
+}
+.info{
+    width:50%;
+    margin-top: 80px;
+    margin-left:50px;
+
+    padding:10px;
+    text-align: center;
+    font-size: 20px;
+    font-family:'Merriweather';
+    background-color: #15181A;
+    color: #fff;
+    float:left;
+    border-radius: 1em;
+}
+.column{
+    margin-top:0px ;
+    margin-right:50px;
+    float:right;
+    width:300px;
+    height: 300px;
+    background-color: #15181A
+}
+#ima {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    align-items: center;
+    }
+
+div.gallery {
+
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    background-color: rgb(204, 255, 244);
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius:2em;
+
+    opacity:88%
+    }
+      
+div.gallery:hover {
+    border: 3px solid #4D3032;
+    background-color: #fff;
+    }
+      
+div.gallery img {
+    width: 100%;
+    height: auto;
+    }
+      
+div.desc {
+    padding: 15px;
+    text-align: center;
+    }
+.hel{
+    float: right;
+}
+div.gallery1 {
+    margin-top:100px;
+    margin: 5px;
+    margin-right:50px;
+    margin-top:150px;
+    border: 1px solid #ccc;
+    width: 310px;
+    float:right;
+    background-color: rgb(14, 15, 15);
+
+
+    opacity:88%
+  }
+  
+div.gallery1:hover {
+    border: 1px solid #777;
+  }
+  
+div.gallery1 img {
+    width: 100%;
+    height: 180px;
+  }
+  #form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+  }
+.formi {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    
+    background: transparent;
+    outline: none;
+    color: #726659;
+    
+    border: solid 1px #b3aca7;
+    border-bottom: none;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  input:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+  }
+  
+  textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    
+    background: transparent;
+    outline: none;
+    
+    color: #726659;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    
+    border: solid 1px #b3aca7;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  textarea:hover {
+    background: #b3aca7;
+    color: #e2dedb;
+  }
+  
+  #submit {
+    width: 502px;
+    
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 0.875em;
+    color: #b3aca7;
+    
+    outline:none;
+    cursor: pointer;
+    
+    border: solid 1px #b3aca7;
+    border-top: none;
+  }
+  
+  #submit:hover {
+    color: #e2dedb;
+  }
+#mini {
+    margin: 100px 0 25px 0;
+    font-size: 2.3em;
+    text-align: center;
+    letter-spacing: 7px;
+  }
