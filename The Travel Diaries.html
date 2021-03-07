@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    nav.primary-navigation {
+      margin: 0 auto;
+      display: block;
+      padding: 10px 0 0 0;
+      text-align: right;
+      font-size: 16px;
+    }
+    nav.primary-navigation ul li {
+      list-style: none;
+      margin: 0 auto;
+      border-left: 2px solid #3ca0e7;
+      display: inline;
+      padding: 0 30px;
+      position: relative;
+      text-decoration: none;
+      text-align: right;
+      font-family: arvo;
+    }
+    nav.primary-navigation h1 {
+      list-style: none;
+      margin: 0 auto;
+      border-left: 2px solid #3ca0e7;
+      display: inline;
+      padding: 0 30px;
+      position: relative;
+      text-decoration: none;
+      text-align: left;
+      font-family: arvo;
+    }
+    nav.primary-navigation li a:hover {
+      color: #3ca0e7;
+    }
+    nav.primary-navigation li:hover {
+      cursor: pointer;
+    }
+    nav.primary-navigation ul li ul {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      padding-left: 0;
+      left: 0;
+      display: none;
+      background: white;
+    }
+    nav.primary-navigation ul li:hover > ul,
+    nav.primary-navigation ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      min-width: 250px;
+      text-align: left;
+      padding-top: 20px;
+      box-shadow: 0px 3px 5px -1px #ccc;
+    }
+    nav.primary-navigation ul li ul li {
+      clear: both;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+      border-style: none;
+    }
+    nav.primary-navigation h1 {
+      clear: both;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 10px;
+      border-style: none;
+    }
+    nav.primary-navigation ul li ul li a:hover {
+      padding-left: 10px;
+      border-left: 2px solid #3ca0e7;
+      transition: all 0.3s ease;
+    }
+    
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      color: #3CA0E7;
+    }
+    
+    ul li ul li a {
+      transition: all 0.5s ease;
+    }
+</style>
+    </style>
+    <body>
+        <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    
+        <nav role="navigation" class="primary-navigation">
+          <ul>
+            <h1>The Travel Diaries </h1>
+            <li><a href="file:///C:/Users/ajayk/OneDrive/Desktop/Multi-Device%20Programming/home.html">Home</a></li>
+            <li><a href="file:///C:/Users/ajayk/OneDrive/Desktop/Multi-Device%20Programming/contact.html">About Us</a></li>
+          </ul>
+        </nav>
+
+    
+    </body>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="file:///C:/Users/ajayk/OneDrive/Desktop/Multi-Device%20Programming/hotels.html">Hotels</a>
+  <a href="file:///C:/Users/ajayk/OneDrive/Desktop/Multi-Device%20Programming/transportation.html">Transportation</a>
+  <a href="file:///C:/Users/ajayk/OneDrive/Desktop/Multi-Device%20Programming/food.html">Food and Restaurants</a>
+  <a href="#">Best Time to Visit</a>
+  <a href="#">Photographs</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>   
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: arvo;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("banaras.jpg");
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">VARANASI</h1>
+  </div>
+</div>
+</body>
+
+<style>
+  p    {color: #000000;
+        padding: 20px;}
+  h2  {text-align: center;
+      padding: 20px;}
+  </style>
+
+<body>
+  
+    <h2>Description</h2>
+
+        <p>
+          Varanasi, traditionally known as Banaras in India, is a popular holy city 
+          of the nation located in the central region of the Ganges Valley in North India. 
+          This city is not just the oldest in India but happens to be the oldest colonized cities 
+          universally. Banaras has religious as well as literal significance. This city is known 
+          for world renowned universities like Banaras Hindu University (founded by Madan Mohan Malvia), 
+          Sampurnanand Sanskrit University and the Mahatma Gandhi Kashi Vidyapeeth. Therefore the city is 
+          generally referred to as the city of temples or the city of learning.
+        <br>
+        <br>
+          Varanasi enjoys a subtropical climate (majorly humid because of the presence of River Ganges). 
+          The summers are very humid and hot. You can try and visit Varanasi from September to November. 
+          Winters are generally cold during to the Himalayan influence. Varanasi enjoys a tremendous tourist 
+          rate every year. Major part of its economy depends on tourism.
+        <br>
+        <br>
+          Varanasi is an old city and still follows the same traditional culture for ages now. This city truly 
+          demonstrates India’s rich culture. People of numerous religions (Hindus, Jains) believe in the rituals 
+          and practices of this holy city. Buddhism was also founded here itself. Varanasi has also produced several 
+          artists, musicians and writers.
+        </p>
+    
+</body>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  </style>
+
+<h2>History</h2>
+    
+<div class="row">
+  <div class="column">
+    <p>
+        According to Hindu mythology, Varanasi was founded by Shiva, one of three principal deities 
+        along with Brahma and Vishnu. During a fight between Brahma and Shiva, one of Brahma's five 
+        heads was torn off by Shiva. As was the custom, the victor carried the slain adversary's head 
+        in his hand and let it hang down from his hand as an act of ignominy, and a sign of his own bravery. 
+        A bridle was also put into the mouth. Shiva thus dishonoured Brahma's head, and kept it with him at 
+        all times. When he came to the city of Varanasi in this state, the hanging head of Brahma dropped 
+        from Shiva's hand and disappeared in the ground. Varanasi is therefore considered an extremely holy site.
+    </p>
+  </div>
+  <div class="column">
+    <img src="C:/Users/ajayk/OneDrive/Desktop/Multi-Device Programming/img1.jpg" alt="City" width="420" height="350">
+  </div>
+</div>
+</body>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  </style>
+
+<h2>Religion</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="C:/Users/ajayk/OneDrive/Desktop/Multi-Device Programming/religion.jpg" alt="City" width="420" height="350">
+  </div>
+  <div class="column">
+    <p>
+      Hinduism is predominantly followed in Varanasi while Islam being the largest minority. 
+      Nearly, 70% of the population follows Hinduism. The city also agglomerate different 
+      religions such as Christianity, Sikhism, Jainism and Buddhism. The city is also a centre 
+      for Buddhist pilgrimage. At Sarnath, Lord Buddha gave his first teaching after attaining 
+      enlightenment. Hence, agglomerating Buddhist population in the region.
+        <br>
+        <br>
+      In the sacred geography of India Varanasi is known as the "microcosm of India". In addition 
+      to its 3,300 Hindu religious places, Varanasi has 12 churches, three Jain mandirs, nine Buddhist 
+      shrines, three Gurdwaras (Sikh shrines), and 1,388 Muslim holy places.
+      </p>
+  </div>
+</div>
+</body>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  </style>
+
+<h2>Notable Landmarks</h2>
+
+
+<div class="row">
+  <div class="column">
+    <p>
+      <h3>Ramnagar Fort</h3><br>
+      The Ramnagar Fort, located near the Ganges on its eastern bank and opposite 
+      the Tulsi Ghat, was built in the 18th century by Kashi Naresh Raja Balwant 
+      Singh with cream-coloured chunar sandstone. The fort is a typical example of 
+      the Mughal architecture with carved balconies, open courtyards, and scenic pavilions. 
+      At present, the fort is in disrepair. The fort and its museum are the repository of 
+      the history of the kings of Benares. Cited as an "eccentric" museum, it contains a 
+      rare collection of American vintage cars, bejewelled sedan chairs, an impressive weaponry 
+      hall, and a rare astrological clock. In addition, manuscripts, especially religious 
+      writings, are housed in the Saraswati Bhawan which is a part of a museum within the fort. 
+      Many books illustrated in the Mughal miniature style are also part of the collections. 
+      Because of its scenic location on the banks of the Ganges, it is frequently used as an 
+      outdoor shooting location for films.
+      </p>
+  </div>
+  <div class="column">
+    <img src="C:/Users/ajayk/OneDrive/Desktop/Multi-Device Programming/Ramnagar.jpg" alt="City" width="420" height="350">
+  </div>
+  </div>
+    
+    <div class="row">
+      <div class="column">
+        <p>
+        <h3>Ghats</h3><br>
+        The Ghats in Varanasi are world-renowned embankments made in steps of stone slabs along 
+        the river bank where pilgrims perform ritual ablutions. The ghats are an integral complement 
+        to the Hindu concept of divinity represented in physical, metaphysical, and supernatural 
+        elements. Varanasi has at least 84 ghats, most of which are used for bathing by pilgrims 
+        and spiritually significant Hindu puja ceremony, while a few are used exclusively as Hindu 
+        cremation sites. Steps in the ghats lead to the banks of Ganges, including the Dashashwamedh 
+        Ghat, the Manikarnika Ghat, the Panchganga Ghat, and the Harishchandra Ghat, where Hindus cremate 
+        their dead. Many ghats are associated with Hindu legends and several are now privately owned.
+        </p>
+      </div>
+      <div class="column">
+        <img src="C:/Users/ajayk/OneDrive/Desktop/Multi-Device Programming/ghat2.jpg" alt="City" width="420" height="350">
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <p>
+        <h3>Temples</h3><br>
+        The Kashi Vishwanath Temple, on the Ganges, is one of the 12 Jyotirlinga Shiva temples in Varanasi. 
+        The temple has been destroyed and rebuilt several times throughout its existence. The Gyanvapi Mosque, 
+        which is adjacent to the temple, is the original site of the temple. The temple, which is also known 
+        as the Golden Temple, was built in 1780 by Queen Ahilyabai Holkar of Indore. The two pinnacles of the 
+        temple are covered in gold and were donated in 1839 by Ranjit Singh, the ruler of Punjab. The dome is 
+        scheduled to receive gold plating through a proposed initiative of the Ministry of Culture and Religious 
+        Affairs of Uttar Pradesh. Numerous rituals, prayers, and aartis are held daily at the temple between 02:30 and 23:00.
+        <br>
+        <br>
+        The Sankat Mochan Hanuman Temple, which is situated by the Asi River, is one of the sacred temples of the Hindu 
+        god Hanuman. The present temple was built in the early 1900s by the educationist and Indian independence figure, 
+        Pandit Madan Mohan Malaviya, the founder of Banaras Hindu University. According to Hindu legend the temple was built 
+        on the spot where the medieval Hindu saint Tulsidas had a vision of Hanuman. During a 7 March 2006 terrorist attack, 
+        one of three explosions hit the temple while a wedding was in progress, and resulted in injuries to 30 people apart 
+        from 23 deaths. Following the attack, a permanent police post was installed inside the temple.
+        </p>
+      </div>
+      <div class="column">
+        <img src="C:/Users/ajayk/OneDrive/Desktop/Multi-Device Programming/vish.jpg" alt="City" width="420" height="350">
+      </div>
+    </div>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      </style>
+    
+    <h2>Tourism</h2>
+    
+    <div class="row">
+      <div class="column">
+        <img src="C:/Users/ajayk/OneDrive/Desktop/Multi-Device Programming/tourist.jpg" alt="City" width="600" height="300">
+      </div>
+      <div class="column">
+        <p>
+          Tourism is Varanasi's second most important industry. Domestic tourist most commonly visit for religious 
+          purposes while foreign tourist visit for ghats along River Ganges and Sarnath. Most domestic tourists are from 
+          Bihar, West Bengal, Madhya Pradesh, and other parts of Uttar Pradesh, while the majority of foreign tourists 
+          are from Sri Lanka and Japan. The peak tourist season falls between October and March. In total, 
+          there are around 12,000 beds available in the city, of which about one half are in inexpensive budget 
+          hotels and one third in dharamsalas. Overall, Varanasi's tourist infrastructure is not well developed.
+        </p>
+      </div>
+    </div>
+    </body>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      </style>
+
+    <style>
+      .mapouter {
+        padding: 20px 20px 20px 20px;
+        margin: 20pxx;
+      }
+    </style>
+</body>
+</html>
