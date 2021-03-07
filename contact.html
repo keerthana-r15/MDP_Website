@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            nav.primary-navigation {
+              margin: 0 auto;
+              display: block;
+              padding: 10px 0 0 0;
+              text-align: right;
+              font-size: 16px;
+            }
+            nav.primary-navigation ul li {
+              list-style: none;
+              margin: 0 auto;
+              border-left: 2px solid #3ca0e7;
+              display: inline;
+              padding: 0 30px;
+              position: relative;
+              text-decoration: none;
+              text-align: right;
+              font-family: arvo;
+            }
+            nav.primary-navigation h1 {
+              list-style: none;
+              margin: 0 auto;
+              border-left: 2px solid #3ca0e7;
+              display: inline;
+              padding: 0 30px;
+              position: relative;
+              text-decoration: none;
+              text-align: left;
+              font-family: arvo;
+            }
+            nav.primary-navigation li a:hover {
+              color: #3ca0e7;
+            }
+            nav.primary-navigation li:hover {
+              cursor: pointer;
+            }
+            nav.primary-navigation ul li ul {
+              visibility: hidden;
+              opacity: 0;
+              position: absolute;
+              padding-left: 0;
+              left: 0;
+              display: none;
+              background: white;
+            }
+            nav.primary-navigation ul li:hover > ul,
+            nav.primary-navigation ul li ul:hover {
+              visibility: visible;
+              opacity: 1;
+              display: block;
+              min-width: 250px;
+              text-align: left;
+              padding-top: 20px;
+              box-shadow: 0px 3px 5px -1px #ccc;
+            }
+            nav.primary-navigation ul li ul li {
+              clear: both;
+              width: 100%;
+              text-align: left;
+              margin-bottom: 20px;
+              border-style: none;
+            }
+            nav.primary-navigation h1 {
+              clear: both;
+              width: 100%;
+              text-align: left;
+              margin-bottom: 10px;
+              border-style: none;
+            }
+            nav.primary-navigation ul li ul li a:hover {
+              padding-left: 10px;
+              border-left: 2px solid #3ca0e7;
+              transition: all 0.3s ease;
+            }
+            
+            a {
+              text-decoration: none;
+            }
+            a:hover {
+              color: #3CA0E7;
+            }
+            
+            ul li ul li a {
+              transition: all 0.5s ease;
+            }
+        </style>
+            </style>
+            <body>
+                <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+            
+                <nav role="navigation" class="primary-navigation">
+                  <ul>
+                    <h1>The Travel Diaries </h1>
+                    <li><a href="file:///C:/Users/ajayk/OneDrive/Desktop/Multi-Device%20Programming/home.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                  </ul>
+                </nav>
+            </body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: arvo;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Traveling is about discovering new ideas, gaining new experiences. The aim of this Travel blog is to introduce you to 
+    places, activities and adventures you didn’t even know existed. This is about storytelling. Here, we share stories with 
+    you to expand your horizons. The truth is we won’t each be able to visit every destination, but we can certainly learn about 
+    places and people through these stories.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="C:/Users/ajayk/OneDrive/Desktop/Multi-Device Programming/astha.jpg" alt="Astha Kumar" style="width:100%">
+      <div class="container">
+        <h2>Astha Kumar</h2>
+        <p class="title">Designation</p>
+        <p>Description</p>
+        <p>astha.kumar18@st.niituniversity.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="C:/Users/ajayk/OneDrive/Desktop/Multi-Device Programming/manasi.jpg" alt="Manasi" style="width:90%">
+      <div class="container">
+        <h2>Manasi Charlu</h2>
+        <p class="title">Designation</p>
+        <p>Description</p>
+        <p>manasi.charlu18@st.niituniversity.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="C:/Users/ajayk/OneDrive/Desktop/Multi-Device Programming/keerthana.jpeg" alt="Keerthana Reddy" style="width:100%">
+      <div class="container">
+        <h2>Bora Srikeerthana Reddy</h2>
+        <p class="title">Designation</p>
+        <p>Description</p>
+        <p>bora.reddy18@st.niituniversity.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
